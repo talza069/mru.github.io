@@ -1,0 +1,189 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #51279B;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10;
+    margin: 15;
+    display: flex; 
+}
+
+header nav ul li {
+    margin: 0 15px; 
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.individual-page {
+    text-align: center;
+    margin: 2% 0;
+}
+
+h1 {
+    padding-top: 10px;
+    margin: 0;
+}
+
+h2 {
+    text-align: left;
+    padding: 30px;
+}
+
+/* Main Content Area */
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.large-image-container {
+    margin-bottom: 10px;
+}
+
+.large-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-info {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-info .description {
+    font-weight: bold;
+}
+
+.details-text {
+    font-size: 16px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Related Images Section */
+.related-images {
+    text-align: center;
+    display: inline-flex;
+    padding: 30px;
+}
+
+.related-images-container {
+    display: inline-block;
+}
+
+.related-img {
+    display: inline-block;
+    margin: 13px;
+}
+
+.related-images img {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #51279B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    /* Stack header logo and nav links vertically */
+    header {
+        flex-direction:row;
+        padding: 20px 10px;
+    }
+
+    header nav {
+        margin-left: 0; /* Remove the margin for centered alignment */
+    }
+
+    header nav ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    header nav ul li {
+        padding: 10px;
+        margin: 10px 0; /* Space between nav items */
+    }
+
+    .logo {
+        width: 60px; /* Reduce logo size for tablet screens */
+    }
+    /* Individual page content */
+    .individual-page {
+        padding: 10px;
+    }
+
+    /* Adjust large image */
+    .large-image {
+        width: 100%; /* Ensure the image takes full width of the screen */
+        height: auto;
+    }
+
+    /* Related Images Section - Stack images vertically */
+    .related-images {
+        flex-direction: column; /* Stack related images vertically */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .related-img {
+        margin: 20px 0; /* Add space between images */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    
+    header {
+        padding: 10px;
+    }
+
+    .large-image {
+        width: 100%; /* Ensure the image takes up full width */
+        height: auto;
+    }
+
+    .related-images {
+        padding: 0; /* Remove padding on smaller screens */
+    }
+
+    .related-img {
+        margin: 15px 0; /* Add vertical spacing between related images */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce the font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust the heading size */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}

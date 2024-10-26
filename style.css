@@ -1,0 +1,187 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('images/florence.jpg');
+    background-size: cover;
+    background-position: center; 
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 40px; 
+    background-color: transparent; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 100; 
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Adjust space between navigation items */
+}
+
+header nav ul li a {
+    color: #51279B; /* Change the navigation text color to purple */
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 500px; /* Adjust hero height to better showcase the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align the text and button to the left */
+    color: white;
+    padding-left: 50px; /* Add left padding to move the text away from the edge */
+    background-image: url('images/florence.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .overlay {
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px; /* Set paragraph font size to 24px */
+    margin: 10px 0 20px 0;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8662C7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Cards section */
+.cards {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.likes, .comments {
+    display: inline-block;
+    margin-right: 10px;
+    color: #51279B;
+}
+
+/* Footer */
+footer {
+    background-color: #51279B;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction:row;
+        padding: 20px 10px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    header nav ul li {
+        padding: 10px;
+        margin: 10px 0; /* Space between nav items */
+    }
+
+    /* Hero section - Adjust for smaller screens */
+    .hero {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .hero .btn {
+        font-size: 16px;
+    }
+
+    /* Cards section - Stack cards vertically */
+    .cards {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* Footer - Change footer layout */
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
